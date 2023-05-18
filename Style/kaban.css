@@ -1,0 +1,68 @@
+:root {
+    --skyGreen: #087474f3;
+    --white: #fff;
+    --dark: #000;
+    --grey: rgba(16, 90, 22, 0.2);
+    --grey_dark: rgba(0, 0, 0, 0.25);
+}
+body{
+    font-family: 'Fira sans', sans-serif;
+    background-color: var(--skyGreen);
+}
+*{
+    box-sizing: border-box;
+}
+h2 {
+    color: var(--white);
+}
+header {
+    text-align: center;
+    color: var(--white);
+    user-select: none;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75rem;
+}
+.kaban_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.33%;
+    row-gap: 0.5rem;
+}
+.kaban_items {
+    color: var(--dark);
+    min-width: 100%;
+    border-radius: 0.2rem;
+}
+.kaban_item {
+    margin-bottom: 0.3rem;
+}
+.item_input {
+    display: block;
+    background-color: var(--white);
+    padding: 0.5rem 0.2rem;
+    text-align: left;
+    margin: 0;
+}
+.item_drop_zone {
+ height:  10px;
+ transition: background 0.15s, height 0.15s  ;
+}
+.item_drop_zone--active {
+    height:  1.4rem;;
+    background: rgba(0, 0, 0, 0.25);
+   }
+.kaban_btn_add {
+ background-color: var(--grey);
+ border: none;
+ border-radius: 0.2rem;
+ padding: 0.5rem 0;
+ color: var(--white);
+ cursor: pointer;
+}
+.kaban_btn_add:active{
+ background-color: var(--grey_dark);
+ transition: height 3.15s;
+}
